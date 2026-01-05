@@ -207,3 +207,49 @@ Commands:
 => git commit -m "Applied one to many relation between 2 models"
 
 => git push origin master
+
+==================================================================================
+
+#                           Many to One Model Relations 
+#                           ===========================
+
+***VERY VERY MOST IMPORTANT***
+
+🔑 ONE LINE TRUTH (yaad rakh lo)
+
+One-to-Many = Many-to-One (same relation)
+Sirf bolne / dekhne ka angle alag hota hai
+
+🔁 Tumhara User–Post example hi Many-to-One bhi hai:
+
+Tumne pehle kya banaya tha:
+
+. User 1 ────< Post 100
+
+Isko bol sakte ho:
+------------------
+-> User ke liye → One-to-Many (User has many posts)
+
+-> Post ke liye → Many-to-One (Many posts belong to one user)
+
+👉 Code bilkul same रहता है
+
+🧩 Visual memory trick
+----------------------
+Foreign key jis model me hoti hai
+👇
+Wahi MANY side hoti hai
+
+Tumhare case me: 'Post → userId'
+
+➡️ Post = MANY
+➡️ User = ONE
+
+🏁 FINAL CONFUSION BREAKER
+--------------------------
+User–Post jo tumne banaya tha wahi One-to-Many bhi hai aur wahi Many-to-One bhi
+
+Difference sirf itna hai:
+
+-> Tum kis side se bol rahe ho
+-> Tum kis side se data dekh rahe ho
